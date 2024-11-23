@@ -3,11 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "matrizirregular", "matrizirregular\matrizirregular.csproj", "{52C1DFFA-2BFB-4A4F-BE55-54089FC0870F}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "matrizbidimensional", "matrizbidimensional\matrizbidimensional.csproj", "{48B32343-DB9C-42DD-81C9-A5ECA82ADE8E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veterinaria", "Vet\Veterinaria.csproj", "{16F9596C-4CD6-496E-915E-7612D9539B5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Veterinaria", "Vet\Veterinaria.csproj", "{16F9596C-4CD6-496E-915E-7612D9539B5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,14 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{52C1DFFA-2BFB-4A4F-BE55-54089FC0870F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{52C1DFFA-2BFB-4A4F-BE55-54089FC0870F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{52C1DFFA-2BFB-4A4F-BE55-54089FC0870F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{52C1DFFA-2BFB-4A4F-BE55-54089FC0870F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{48B32343-DB9C-42DD-81C9-A5ECA82ADE8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{48B32343-DB9C-42DD-81C9-A5ECA82ADE8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{48B32343-DB9C-42DD-81C9-A5ECA82ADE8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{48B32343-DB9C-42DD-81C9-A5ECA82ADE8E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{16F9596C-4CD6-496E-915E-7612D9539B5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{16F9596C-4CD6-496E-915E-7612D9539B5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16F9596C-4CD6-496E-915E-7612D9539B5C}.Release|Any CPU.ActiveCfg = Release|Any CPU

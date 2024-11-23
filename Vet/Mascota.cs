@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Vet
+namespace Veterinaria
 {
     public class Mascota
     {
@@ -15,6 +15,15 @@ namespace Vet
         public override string ToString()
         {
             return "Nombre: " + Nombre + "Edad: " + Edad + "Especie: " + Especie;
+        }
+        public void Masc()
+        {
+            Console.WriteLine("Nombre: " );
+            Nombre=Console.ReadLine();
+            Console.WriteLine("Edad: ");
+            Edad = int.Parse(Console.ReadLine());
+            Console.WriteLine("Especie: ");
+            Especie = Console.ReadLine();
         }
     }
     
