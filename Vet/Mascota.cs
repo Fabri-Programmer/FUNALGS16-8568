@@ -25,6 +25,7 @@ namespace Veterinaria
             Console.WriteLine("Especie: ");
             Especie = Console.ReadLine();
         }
+
     }
     
 }

@@ -15,7 +15,8 @@ namespace Veterinaria
         {
             return "Descripcion: " + Descripcion + "Precio: " + Precio;
         }
-        public void Masc()
+        
+        /*public void Masc()
         {
             Console.WriteLine("Nombre: ");
             Descripcion = Console.ReadLine();
@@ -24,5 +25,6 @@ namespace Veterinaria
             Console.WriteLine("Especie: ");
             Especie = Console.ReadLine();
         }
+        */
     }
 }

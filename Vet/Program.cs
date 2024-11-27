@@ -17,20 +17,18 @@ sus respectivos arreglos
 Divida entre sus integrantes, el lider consolida y los integrantes uno hace lo de servicios y el otro el de mascotas
 Debe tener una rama por integrante, el lider debe tener por lo menos 2 ramas: main y dev. debe trabajar y consolidar en dev
 */
+using System.Security.Cryptography.X509Certificates;
 using Veterinaria;
 
 
-Boleta boleta = new Boleta();
-Mascota mascota1 = new Mascota();    
-Servicio servicio = new Servicio();
+
 
 
 //designar variables//
 int respS;
+byte opcion;
 
-int resp;
-
-int posicion = 0;
+int posicion=0;
 
 Mascota masc = new Mascota();
 
@@ -44,11 +42,11 @@ ClaseUtil util = new ClaseUtil();
 
 do
 {
-    Console.Write("Cuantos datos ingresar: ");
+    Console.Write("Presione [1] para ingresar al aplicativo!: ");
     respS = int.Parse(Console.ReadLine());
 
-} while (respS <= 0);
-
+} while (respS != 1);
+Console.Clear();
 //Mascota
 
 string[] arregloNombre = new string[respS];
@@ -76,12 +74,10 @@ string[] arregloDescripcion = new string[respS];
 double[] aregloPrecio = new double[respS];
 
 
+
 do
 
 {
-
-    Console.WriteLine("");
-
     Console.WriteLine("\n**MENU**");
 
     Console.WriteLine("OPCION 1 [1]: ");
@@ -92,23 +88,32 @@ do
 
     Console.WriteLine("FIN [0]: ");
 
-    Console.Write("\n¿Que opcion quieres ingresar?: ");
 
-    resp = int.Parse(Console.ReadLine());
+    Console.WriteLine("Ingrese opcion: ");
+    while (!byte.TryParse(Console.ReadLine(), out opcion) || opcion > 3)
+    {
+        Console.WriteLine("Error: Ingrese valor: ");
+    }
+    Console.Clear();
 
 
 
 
-
-
-
-    switch (resp)
+    switch (opcion)
 
     {
 
         case 1:
 
             util.Opcion1();
+            arregloEdad[posicion] = masc.Edad;
+            arregloNombre[posicion] = masc.Nombre;
+            arregloEspecie[posicion]=masc.Especie;
+            
+
+
+
+            break;
 
             break;
 
@@ -128,12 +133,10 @@ do
 
             break;
 
-        case 4:
+        case 0:
 
             {
-
-
-
+                Environment.Exit(0);
             }
 
             break;
@@ -144,15 +147,15 @@ do
 
 
 
-} while (resp != 4);
+} while (opcion != 4);
+
+
+
+
+
 
 
 /*
-
-
-
-
-
 do
 {
 
@@ -161,11 +164,9 @@ do
             
                 Console.WriteLine("\n*********DATOS DE BOLETA*********");
                 Console.Write("INGRESA EDAD: ");
-                mascota1.Edad = int.Parse(Console.ReadLine());
-                Edad[posicion] = mascota1.Edad; 
-                Console.Write("INGRESA TU MASCOTA: ");
-                boleta.Mascota2 = Console.ReadLine();
-                Mascota[posicion] = boleta.Mascota2;
+                masc.Edad = int.Parse(Console.ReadLine());
+                Edad[posicion] = masc.Edad; 
+
                 Console.Write("INGRESA NOMBRE: ");
                 mascota1.Nombre = Console.ReadLine();
                 Nombre[posicion] = mascota1.Nombre;

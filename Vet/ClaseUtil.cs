@@ -3,6 +3,8 @@ namespace Veterinaria
 {
     internal class ClaseUtil
     {
+        Mascota masc1 = new Mascota();
+
         public void Opcion1()
 
         {
@@ -15,11 +17,11 @@ namespace Veterinaria
 
                 Console.WriteLine("\n**MENU**");
 
-                Console.WriteLine("CREAR 1 [1]: ");
+                Console.WriteLine("CREAR [1]: ");
 
-                Console.WriteLine("ELIMINAR 2 [2]: ");
+                Console.WriteLine("ELIMINAR [2]: ");
 
-                Console.WriteLine("LISTAR SERVICIOS 3 [3]: ");
+                Console.WriteLine("LISTAR SERVICIOS  [3]: ");
 
                 Console.WriteLine("VOLVER [0]: ");
 
@@ -31,9 +33,14 @@ namespace Veterinaria
 
                 {
 
-                    case 1: break;
+                    case 1:
+                        masc1.Masc();
 
-                    case 2: break;
+                        break;
+
+                    case 2: 
+
+                        break;
 
                     case 3: break;
 
